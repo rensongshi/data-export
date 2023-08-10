@@ -1,0 +1,12 @@
+version: 0.2
+env:
+  variables:
+    AICURE_ENV: "dev"
+
+phases:
+  pre_build:
+    commands:
+      - echo "pre_build"
+  build:
+    commands:
+      - bash ./deploy.sh
